@@ -1,278 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contra o Bullying — Informação e Apoio</title>
-  <meta name="description" content="Site educativo sobre bullying: tipos, efeitos, como pedir ajuda e materiais de prevenção. Responsivo e acessível." />
-  <style>
-    :root{
-      --accent:#2b6cb0;
-      --accent-2:#2c5282;
-      --bg:#f7fbff;
-      --card:#ffffff;
-      --muted:#6b7280;
-      --success:#16a34a;
-      --danger:#e11d48;
-      --radius:14px;
-      --max-width:1100px;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:linear-gradient(180deg,var(--bg),#eef6ff 60%);color:#0f172a}
-    a{color:var(--accent)}
-    .container{width:calc(100% - 2rem);max-width:var(--max-width);margin:0 auto}
-
-    header{padding:1rem 0;}
-    .topbar{display:flex;align-items:center;justify-content:space-between}
-    .brand{display:flex;align-items:center;gap:.75rem}
-    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
-    nav{display:flex;gap:1rem;align-items:center}
-    .nav-links{display:flex;gap:1rem}
-    .btn{background:var(--accent);color:white;padding:.5rem .9rem;border-radius:10px;text-decoration:none}
-
-    .hamburger{display:none;background:none;border:0;font-size:1.4rem}
-    @media(max-width:800px){
-      .nav-links{display:none}
-      .hamburger{display:inline-flex}
-    }
-
-    .hero{display:grid;grid-template-columns:1fr 380px;gap:2rem;align-items:center;padding:2rem 0}
-    .hero h1{font-size:clamp(1.4rem,2.6vw,2.4rem);margin:0}
-    .hero p{color:var(--muted);margin-top:.6rem}
-    .card{background:var(--card);border-radius:var(--radius);padding:1rem;box-shadow:0 8px 30px rgba(15,23,42,0.06)}
-    .stats{display:flex;gap:1rem;justify-content:space-between}
-    .stat{flex:1;text-align:center}
-
-    section{padding:1.25rem 0}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
-    .grid .card{padding:1.25rem}
-    @media(max-width:1000px){.hero{grid-template-columns:1fr;}.grid{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:600px){.grid{grid-template-columns:1fr}}
-
-    .faq button{width:100%;text-align:left;background:none;border:0;padding:1rem 0;font-size:1rem}
-    .faq .answer{max-height:0;overflow:hidden;transition:max-height .32s ease;padding:0}
-    .faq .open .answer{padding-top:.5rem;max-height:400px}
-
-    form{display:grid;gap:.6rem}
-    input,textarea,select{padding:.6rem;border-radius:8px;border:1px solid #e6eefb}
-    textarea{min-height:120px}
-
-    footer{padding:2rem 0;color:var(--muted);font-size:.9rem}
-
-    .small{font-size:.9rem;color:var(--muted)}
-    .pill{display:inline-block;padding:.25rem .6rem;border-radius:999px;background:#eef6ff;color:var(--accent);font-weight:600}
-
-    :focus{outline:3px solid rgba(59,130,246,0.18);outline-offset:2px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bullying Material</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="container">
-    <div class="topbar">
-      <div class="brand">
-        <div class="logo" aria-hidden="true">B</div>
-        <div>
-          <div style="font-weight:700">Bullying Material</div>
-          <div class="small">Respeito é o melhor material que existe!</div>
-        </div>
-      </div>
-      <nav aria-label="Menu principal">
-        <div class="nav-links" id="navLinks">
-          <a href="#sobre">Sobre</a>
-          <a href="#tipos">Tipos</a>
-          <a href="#ajuda">Pedir Ajuda</a>
-          <a href="#recursos">Recursos</a>
-        </div>
-        <button class="hamburger" id="hamburger" aria-controls="navLinks" aria-expanded="false" aria-label="Abrir menu">☰</button>
-      </nav>
-    </div>
-  </header>
+    <header>
+        <h1>Bullying Material</h1>
+    </header>
 
-  <main class="container">
-    <section class="hero">
-      <div>
-        <h1>O que é Bullying Material?</h1>
-        <p>O Bullying Material é um tipo de bullying que envolve o dano, furto ou destruição constante dos pertences de outra pessoa, como cadernos, estojos, roupas e outros objetos pessoais. Geralmente, é acompanhado de ameaças ou intimidação e se caracteriza pela natureza repetitiva.</p>
-
-        <div style="margin-top:1rem;display:flex;gap:.75rem;flex-wrap:wrap">
-          <a class="btn" href="#ajuda">Como pedir ajuda</a>
-          <a class="pill" href="#recursos">Materiais e recursos</a>
-        </div>
-
-        <section id="sobre" style="margin-top:1.25rem">
-          <div class="card">
-            <h3>O que é bullying?</h3>
-            <p class="small">Bullying envolve comportamento repetitivo e intencional — humilhação, exclusão, agressão verbal ou física, e mais. Já o ciberbullying ocorre online ou por mensagens.</p>
-          </div>
+    <main class="container">
+        <section class="info-card">
+            <h2>O que é?</h2>
+            <p>O Bullying Material é o tipo de agressão que envolve o dano, furto ou roubo recorrente de pertences de uma vítima. Ocorre quando o agressor destrói objetos pessoais, como rasgar cadernos e estojos, ou rouba itens como dinheiro, lanches ou materias escolares.</p>
         </section>
-        
-      </div>
 
-      <aside>
-        <div class="card">
-          <h4>Fatos rápidos</h4>
-          <div class="stats" style="margin-top:.75rem">
-            <div class="stat">
-              <div style="font-size:1.25rem;font-weight:700">Tipos</div>
-              <div class="small">Físico, verbal, social, cibernético</div>
-            </div>
-            <div class="stat">
-              <div style="font-size:1.25rem;font-weight:700">Impacto</div>
-              <div class="small">Ansiedade, queda no rendimento, isolamento</div>
-            </div>
-          </div>
-        </div>
-      </aside>
-    </section>
+        <section class="info-card acao">
+            <h2>Características</h2>
+            <ul>
+                <li>Furtar: Pegar um objeto da vítima sem que ela perceba.</li>
+                <li>Roubar: Tomar o objeto da vítima mediante a ameaça ou intimidação.</li>
+                <li>Destruir: Estragar os pertences da vítima de forma intencional.</li>
+                <li>Ocorrência contínua: Um ato isolado de furto ou roubo não é bullying material; é preciso que o agressor repita essas ações constantemente contra a mesma pessoa.</li>
+            </ul>
+        </section>
 
-    <section id="tipos">
-      <h2>Tipos de bullying</h2>
-      <div class="grid">
-        <article class="card" aria-labelledby="t1">
-          <h3 id="t1">Físico</h3>
-          <p class="small">Agressões, empurrões, furtos e destruição de pertences.</p>
-        </article>
-        <article class="card" aria-labelledby="t2">
-          <h3 id="t2">Verbal</h3>
-          <p class="small">Insultos, apelidos, comentários humilhantes e ameaças.</p>
-        </article>
-        <article class="card" aria-labelledby="t3">
-          <h3 id="t3">Social / Relacional</h3>
-          <p class="small">Exclusão, boatos, manipulação de amizades.</p>
-        </article>
-        <article class="card" aria-labelledby="t4">
-          <h3 id="t4">Cibernético</h3>
-          <p class="small">Mensagens, redes sociais e compartilhamento de conteúdo para ridicularizar.</p>
-        </article>
-        <article class="card" aria-labelledby="t5">
-          <h3 id="t5">Sexual</h3>
-          <p class="small">Comentários ou comportamentos de conotação sexual sem consentimento.</p>
-        </article>
-        <article class="card" aria-labelledby="t6">
-          <h3 id="t6">Discriminatório</h3>
-          <p class="small">Ataques baseados em raça, gênero, orientação, religião, deficiência ou condição social.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="efeitos">
-      <h2>Efeitos do bullying</h2>
-      <div class="card">
-        <ul>
-          <li>Impacto emocional: ansiedade, depressão, baixa autoestima.</li>
-          <li>Impacto escolar: faltas, queda no rendimento, evasão.</li>
-          <li>Impacto social: isolamento, perda de amigos.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="ajuda">
-      <h2>Como pedir ajuda</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Se você sofre bullying</h3>
-          <ol>
-            <li>Fale com um adulto de confiança (pai, professor, coordenador).</li>
-            <li>Guarde provas: prints, mensagens, fotos.</li>
-            <li>Procure apoio psicológico quando possível.</li>
-            <li>Se estiver em risco, procure as autoridades locais.</li>
-          </ol>
-        </div>
-        <div class="card">
-          <h3>Se você presencia bullying</h3>
-          <ol>
-            <li>Intervenha com segurança: distraia, chame um adulto.</li>
-            <li>Apoie a vítima: pergunte se ela está bem e ofereça companhia.</li>
-            <li>Reportar o caso à escola ou responsáveis.</li>
-          </ol>
-        </div>
-      </div>
-    </section>
-
-    <section id="recursos">
-      <h2>Materiais e Recursos</h2>
-      <div class="card">
-        <p class="small">Abaixo estão links e sugestões de materiais (manuais, vídeos educativos e contatos de apoio). Adapte as fontes à sua localidade e instituição.</p>
-        <ul>
-          <li><a href="#">Guia para pais e educadores (PDF)</a></li>
-          <li><a href="#">Plano de ação escolar</a></li>
-          <li><a href="#">Vídeos educativos e oficinas</a></li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="faq">
-      <h2>Perguntas Frequentes</h2>
-      <div class="card faq">
-        <div class="qa" id="q1">
-          <button aria-expanded="false" aria-controls="a1">O que fazer se meu amigo sofre bullying?</button>
-          <div class="answer" id="a1">Ofereça apoio, escute sem julgar, incentive a procurar um adulto ou serviço de apoio. Se houver perigo, avise a escola ou responsável.</div>
-        </div>
-        <div class="qa" id="q2">
-          <button aria-expanded="false" aria-controls="a2">O bullying sempre é crime?</button>
-          <div class="answer" id="a2">Nem sempre—muitas situações são abuso escolar que exigem medidas administrativas. Ações que configuram ameaça, lesão ou crimes contra honra podem ter implicações legais.</div>
-        </div>
-        <div class="qa" id="q3">
-          <button aria-expanded="false" aria-controls="a3">Como proteger meu filho online?</button>
-          <div class="answer" id="a3">Mantenha diálogo aberto, limite conteúdo e privacidade, monitore contas quando apropriado e conheça as ferramentas das plataformas para reportar abuso.</div>
-        </div>
-      </div>
-    </section>
-
-    
-
-  </main>
-
-  <footer class="container">
-    <div class="card" style="display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap">
-      <div>
-        <strong>Contra o Bullying</strong>
-        <div class="small">Conteúdo informativo!</div>
-      </div>
-      <div class="small"><span id=""></span> • Bullying não é brincadeira, é coisa séria</div>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('navLinks');
-    hamburger.addEventListener('click', ()=>{
-      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
-      hamburger.setAttribute('aria-expanded', String(!expanded));
-      if(navLinks.style.display === 'flex'){
-        navLinks.style.display = '';
-      } else {
-        navLinks.style.display = 'flex';
-        navLinks.style.flexDirection = 'column';
-        navLinks.style.background = 'white';
-        navLinks.style.padding = '.5rem';
-        navLinks.style.borderRadius = '10px';
-        navLinks.style.boxShadow = '0 8px 16px rgba(15,23,42,0.06)';
-      }
-    });
-
-
-    document.querySelectorAll('.faq .qa button').forEach(btn =>{
-      btn.addEventListener('click', ()=>{
-        const parent = btn.parentElement;
-        const isOpen = parent.classList.contains('open');
-        document.querySelectorAll('.faq .qa').forEach(q=>{q.classList.remove('open'); q.querySelector('button').setAttribute('aria-expanded','false')});
-        if(!isOpen){
-          parent.classList.add('open');
-          btn.setAttribute('aria-expanded','true');
-        }
-      });
-    });
-
-
-    function handleSubmit(e){
-      e.preventDefault();
-      const nome = document.getElementById('nome').value || 'Anônimo';
-      const mensagem = document.getElementById('mensagem').value.trim();
-      if(!mensagem){ alert('Por favor descreva a situação.'); return }
-      alert('Mensagem enviada com sucesso — obrigado, ' + nome + '.');
-      e.target.reset();
-    }
-  </script>
+        <section class="info-card denuncia">
+            <h2>Impactos na Vítima</h2>
+            <p>° É uma forma de agressão que causa danos psicológicos, além dos materiais, e pode estar associada a outras formas de bullying, como o psicológico ou verbal.</p>
+            <p>° Para a vítima, o impacto pode ser significativo, pois a agressão contínua afeta a segurança e o bem-estar, tanto dentro quanto fora da escola.</p>
+        </section>
+    </main>
 </body>
 </html>
